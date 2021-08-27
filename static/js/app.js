@@ -69,10 +69,6 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
     
-    //for (let key of filters) {
-    //  for (let j = 0; j < filteredData.length; j++) {
-    //   }
-    // }
     Object.entries(filters).forEach(([key,value])=>{
       filterData = filterData.filter(object=>object[key]===value);
     });
